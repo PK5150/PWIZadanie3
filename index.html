@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+
+<meta charset="utf-8">
+<meta name="description" content="zadanie 3 na programowanie w internecie">
+<meta name="keywords" content="html, css, zadanie, programowanie, internet, super, strona">
+<meta name="author" content="Paweł Kasprzykowski">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Zadanie 3 Paweł Kasprzykowski</title>
+<link rel="stylesheet" href="style.css">
+<script src="tictactoe.js"></script> 
+<script src="singlepagelogic.js"></script> 
+</head>
+
+
+
+<body>
+
+<div id="header">
+
+THE HEADER
+
+</div>
+<div id="menu">
+<ul class="nav">
+  <li><a id="nav1" class="active" onclick="changePage(1)">Home</a></li>
+  <li><a id="nav2" onclick="changePage(2)">TicTacToe</a></li>
+  <li><a id="nav3" onclick="changePage(3)">Contact</a></li>
+  <li><a id="nav4" onclick="changePage(4)">About</a></li>
+</ul>
+
+	
+
+</div>
+	<div id="content">
+	<div id="contentTicTacToe" class="elementDisabled">
+
+	<div id="currentPlayer" class="krzyzyk2"></div>
+	<div id="restart" onclick="restart()" ></div>
+	<table >
+
+	<tr>
+		<td id="00" class="puste" onclick="klik(0,0)"></td>
+		<td id="01" class="puste" onclick="klik(0,1)"></td>
+		<td id="02" class="puste" onclick="klik(0,2)"></td>
+	</tr>
+	<tr>
+		<td id="10" class="puste" onclick="klik(1,0)"></td>
+		<td id="11" class="puste" onclick="klik(1,1)"></td>
+		<td id="12" class="puste" onclick="klik(1,2)"></td>
+	</tr>
+	<tr>
+		<td id="20" class="puste" onclick="klik(2,0)"></td>
+		<td id="21" class="puste" onclick="klik(2,1)"></td>
+		<td id="22" class="puste" onclick="klik(2,2)"></td>
+	</tr>
+
+
+	</table>
+	<div id="wygrana" ></div>
+
+	</div>
+
+	<div id="contentMain">
+
+
+		<h2>Lorem ipsum dolor sit amet...</h2> 
+		<p>
+Consectetur adipiscing elit. Donec malesuada diam vel sapien dapibus blandit. Integer magna quam, placerat et augue in, molestie malesuada diam. Vestibulum viverra tortor id condimentum luctus. Ut et tellus id odio consequat suscipit. Phasellus luctus risus est, ut euismod sem ullamcorper ac. Ut faucibus, nisl tincidunt tincidunt bibendum, tortor urna scelerisque ex, et dapibus ligula nisi id nulla. Donec dui diam, convallis cursus iaculis vel, congue non orci. In semper commodo semper. Donec eu turpis dolor.
+
+Quisque dictum eros augue, ac finibus velit gravida in. Quisque volutpat eros neque, nec tempus felis commodo facilisis. Duis pulvinar mi vulputate, vulputate lacus sit amet, mollis lectus. Sed ultrices imperdiet ante quis aliquet. Mauris risus justo, facilisis auctor ullamcorper in, lacinia at nibh. Aenean quis posuere quam, nec elementum neque. Vivamus tempor, sem sit amet blandit suscipit, mauris orci euismod tellus, et scelerisque ex odio vel justo. Sed egestas justo in viverra faucibus. Ut massa mauris, commodo ut congue in, imperdiet vel lectus.
+
+		</p><p>
+Fusce finibus malesuada varius. Pellentesque quis est nec nisl scelerisque hendrerit in id nunc. Nulla mi lorem, hendrerit ac libero nec, accumsan imperdiet massa. Donec finibus ante ac tristique viverra. Phasellus molestie ornare aliquam. Etiam vitae eros quis nisl vestibulum pretium. Cras vitae bibendum lacus.
+
+Duis in hendrerit turpis. Duis eget eros eget nibh placerat placerat dapibus dignissim felis. Pellentesque eu justo sit amet odio auctor sagittis. Nam in ipsum massa. Nam posuere, justo hendrerit lobortis faucibus, nisl nisi ultrices elit, at tincidunt justo nisi eu diam. Praesent molestie odio eget sem vulputate, id feugiat metus ornare. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
+
+In volutpat, neque placerat fringilla varius, mauris enim luctus arcu, ut tempor turpis mauris non ante. Nullam id magna at neque tempus mattis a a mauris. Aenean tempor augue sed ipsum commodo, sit amet vulputate nisi euismod. Phasellus pulvinar tempus diam eu vulputate. Nunc viverra at risus non ornare. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec vitae magna sollicitudin, accumsan nisi in, elementum urna. Nulla non tincidunt turpis. In hac habitasse platea dictumst.
+
+Ut tristique ipsum ex, quis posuere neque hendrerit nec. Duis maximus sollicitudin tristique. Nam suscipit elementum nibh, in semper odio vehicula nec. Sed vitae massa eget erat efficitur mattis. Sed semper lacus ac vestibulum aliquam. Donec vel dignissim ipsum. Ut in mattis massa. Morbi vitae nulla lacus. Aenean at dignissim ipsum, at venenatis elit. Aliquam erat volutpat.
+
+		</p><p>
+Vestibulum semper venenatis faucibus. Duis nec faucibus leo, ac porta quam. Pellentesque dignissim viverra justo quis facilisis. Donec faucibus lectus erat. Aenean vulputate tellus vel dolor euismod malesuada. Integer sed lectus ac sem feugiat commodo ac vitae quam. Nam dignissim nulla orci, vel volutpat lectus faucibus at.
+
+Donec nec commodo nisl, ac varius lacus. Aenean sit amet mi nec nibh laoreet sagittis. Vivamus maximus sed lorem sit amet elementum. Aliquam consequat tortor in nisi blandit venenatis. Aliquam suscipit lectus libero, nec ornare massa laoreet nec. Fusce eget velit odio. Aliquam dolor neque, sollicitudin sit amet tellus lobortis, semper tempor lacus.
+
+Mauris lacinia ex eget tellus condimentum, in ullamcorper mi ultricies. Ut ac turpis risus. Aliquam vitae sodales elit. Etiam congue, leo non feugiat pulvinar, ligula risus rhoncus justo, ac suscipit risus magna et nulla. In non maximus ipsum. Maecenas id metus nibh. Donec vitae accumsan felis. Phasellus eu pellentesque quam. Sed nibh lorem, facilisis at faucibus ut, tempor sed massa. Proin ultrices mollis quam, in convallis dui consequat nec. Nunc facilisis quis sapien vel malesuada.
+
+		</p><p>
+Cras quam risus, faucibus non condimentum sed, ultrices eget arcu. Fusce venenatis tellus vitae arcu mattis pellentesque. Aliquam tincidunt est eros, eget scelerisque odio venenatis ultricies. Suspendisse dapibus libero at tellus laoreet, hendrerit scelerisque dolor vulputate. Nam quam erat, mattis et malesuada convallis, feugiat sed sem. Nulla gravida, dolor vitae malesuada gravida, odio dui suscipit enim, quis porttitor dui mi in lectus. Phasellus semper turpis at quam placerat, quis porta turpis aliquam. Curabitur sagittis ante eget libero faucibus, luctus rhoncus metus auctor. Proin mattis nibh a neque viverra, vel euismod turpis fringilla. Donec eu tristique felis. Proin congue ligula interdum arcu commodo auctor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec et nunc non quam blandit pharetra ac at mi. Suspendisse laoreet sodales efficitur. </p>
+
+	</div>
+	<div id="contentContact" class="elementDisabled">
+		blablabla
+	</div>
+	<div id="contentAbout" class="elementDisabled">
+		blablablabout
+	</div>
+	</div>
+	<div id="sidecontent">
+
+	<h2> costam costam </h2>
+	<img src="pk.png" alt="nie ma obrazka :c">
+	<br>
+
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sollicitudin rhoncus lacus, a ultricies lacus dapibus nec. Duis a ultricies velit, at porttitor tortor. Sed bibendum id elit at tincidunt. Aliquam gravida dui id orci bibendum, quis interdum mauris semper. Nulla vel ante metus. Nulla vel mauris eros. Duis non velit felis. 
+
+		
+	</div>
+<div id="footer">
+	<i>----- Paweł Kasprzykowski -----</i>
+
+</div>
+
+
+
+</body>
+
+</html> 
